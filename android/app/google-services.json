@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "176228467284",
+    "project_id": "learn-html-cbc61",
+    "storage_bucket": "learn-html-cbc61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176228467284:android:ecf06cb71d2771904b63c1",
+        "android_client_info": {
+          "package_name": "com.example.learn_webdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176228467284-te3kd8jv7js6f6i2vgrgv29q75e7rtuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD54JCwqw_dXBrjifGjjNtSLxZh3IUJyPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176228467284-te3kd8jv7js6f6i2vgrgv29q75e7rtuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
