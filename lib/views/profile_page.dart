@@ -41,8 +41,11 @@ class _ProfilePageState extends State<ProfilePage> {
 
       if (image != null) {
         //Upload to Firebase
-        var snapshot =
-            await firebaseStorage.ref().child('images/imageName').putFile(file);
+        var snapshot = await firebaseStorage
+            .ref()
+            .child(
+                'userprofilepic/${FirebaseAuth.instance.currentUser!.uid}-profilepic')
+            .putFile(file);
         var downloadUrl = await snapshot.ref.getDownloadURL();
         print(downloadUrl);
 
