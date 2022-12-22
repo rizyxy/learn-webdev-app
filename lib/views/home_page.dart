@@ -1,10 +1,7 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:learn_webdev/database/user_database.dart';
 import 'package:learn_webdev/provider/content_provider.dart';
 import 'package:learn_webdev/views/content_list_page.dart';
-import 'package:learn_webdev/views/login_page.dart';
+import 'package:learn_webdev/views/profile_page.dart';
 import 'package:learn_webdev/widgets/auth_button.dart';
 import 'package:provider/provider.dart';
 
@@ -89,17 +86,14 @@ class HomePage extends StatelessWidget {
               ),
               Flexible(
                   child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 50),
+                      margin: const EdgeInsets.symmetric(horizontal: 50),
                       child: AuthButton(
-                          label: "Logout",
+                          label: "Account Page",
                           onTap: () {
-                            FirebaseAuth.instance.signOut();
-
-                            Navigator.pushAndRemoveUntil(
+                            Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => LoginPage()),
-                                (route) => false);
+                                    builder: (context) => ProfilePage()));
                           })))
             ],
           ),

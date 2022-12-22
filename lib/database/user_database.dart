@@ -15,8 +15,7 @@ class UserDatabase {
   }
 
   static Future<DocumentSnapshot> read(String docID) async {
-    var document =
-        await FirebaseFirestore.instance.collection('users').doc(docID);
+    var document = FirebaseFirestore.instance.collection('users').doc(docID);
 
     return document.get();
   }
